@@ -1,5 +1,26 @@
 body {
-    background-color: beige;
+    background-color: #efefef;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.header--main{
+    font-weight: normal;
+    font-size: 90px;
+    color:lightskyblue;
+}
+
+.header2--main{
+    font-size: 16px;
+    color: aquamarine;
+}
+
+.paragraph--main{
+    color: slategrey;
+}
+
+.link--cta{
+    font-size: 16px;
+    color: aquamarine;
 }
