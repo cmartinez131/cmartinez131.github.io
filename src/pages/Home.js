@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom';
-
+import  Projects from '../pages/Projects';
 
 const Home = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col col-center">
+                {/* <div className="col col-center">
                     <h1>Home</h1>
-                </div>
+                </div> */}
+                <br />
             </div>
-            <div className="row">
+            <div className="row intro-box">
                 <div className="col intro">
                     <p>Hello! I'm Christopher Martinez, a New York City-based Computer Science graduate from Hunter College. My passion lies in software and web development, spanning across several languages including Python, C++, JavaScript, SQL, Swift, HTML, and CSS, along with frameworks/libraries like React and Django.</p>
 
@@ -22,9 +23,12 @@ const Home = () => {
                 </div>
                 <div className="col img-center">
                     <Link to="/contact">
-                        <img className="img-small" src="https://cmartinez131.github.io/images/selfie.jpeg" alt="Self portrait" />
+                        <img className="img-med" src="https://cmartinez131.github.io/images/selfie.jpeg" alt="Self portrait" />
                     </Link>
                 </div>
+            </div>
+            <div>
+                <Projects />
             </div>
         </div>
     )
