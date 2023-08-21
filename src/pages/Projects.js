@@ -38,7 +38,7 @@ const Projects = () => {
                           Leveraged React, JavaScript, CSS, MongoDB, Git, Axios, and Express to build the game.`,
             technology: ["React", "JavaScript", "CSS", "MongoDB", "Git", "Axios", "Express"],
             githubLink: "https://github.com/cmartinez131/sketch",
-            media: "https://media.giphy.com/media/ZgTR3UQ9XAWDvqy9jv/giphy.gif",
+            media: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3BxeDZvNG5uY3F1ZmMzMXRqNjRzY29sMDB5M2lmM3B4cjJrZzR5dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DeXUAtuFtVLGc7uNRv/giphy.gif",
             mediaType: "image"
         },
         {
