@@ -41,16 +41,16 @@ const Projects = () => {
             media: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3BxeDZvNG5uY3F1ZmMzMXRqNjRzY29sMDB5M2lmM3B4cjJrZzR5dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DeXUAtuFtVLGc7uNRv/giphy.gif",
             mediaType: "image"
         },
-        {
-            title: "CodePath.org University: Mobile Application Design Course",
-            description: `Attended a 12-week program for designing and scoping our own mobile applications.
-                          Developed ‘Flix’, an app allowing users to browse movies currently playing in theaters.
-                          Created clones of popular apps such as Twitter and Instagram.`,
-            technology: ["Swift", "Twitter developer APIs", "Parse"],
-            githubLink: "https://github.com/cmartinez131/FlixMovie",
-            media: "https://cmartinez131.github.io/images/flix.gif",
-            mediaType: "image"
-        },
+        // {
+        //     title: "CodePath.org University: Mobile Application Design Course",
+        //     description: `Attended a 12-week program for designing and scoping our own mobile applications.
+        //                   Developed ‘Flix’, an app allowing users to browse movies currently playing in theaters.
+        //                   Created clones of popular apps such as Twitter and Instagram.`,
+        //     technology: ["Swift", "Twitter developer APIs", "Parse"],
+        //     githubLink: "https://github.com/cmartinez131/FlixMovie",
+        //     media: "https://cmartinez131.github.io/images/flix.gif",
+        //     mediaType: "image"
+        // },
         {
             title: "Batting Blvd - Website for Batting Cage Business",
             description: "Developed a modern website to streamline customer bookings for a batting cage business. Features include real-time booking and user account management.",

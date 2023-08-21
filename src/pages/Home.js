@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import  Projects from '../pages/Projects';
+import selfieImage from '../assets/selfie.jpeg';
 
 const Home = () => {
     return (
@@ -23,7 +24,7 @@ const Home = () => {
                 </div>
                 <div className="col img-center">
                     <Link to="/contact">
-                        <img className="img-med" src="https://cmartinez131.github.io/images/selfie.jpeg" alt="Self portrait" />
+                        <img className="img-med" src={selfieImage}  alt="Self portrait" />
                     </Link>
                 </div>
             </div>
