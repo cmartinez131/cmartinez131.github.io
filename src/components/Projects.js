@@ -7,7 +7,7 @@ const Project = ({ title, description, technology, githubLink, media, mediaType 
                 <a href={githubLink} target="_blank" rel="noreferrer">
                     {/* conditionally render based on mediaType */}
                     {mediaType === 'image' && <img className="media" src={media} alt={title} />}
-                    {mediaType === 'video' && <video controls width="100%"><source src={media} type="video/mp4" className="media"/>Your browser does not support the video tag.</video>}
+                    {mediaType === 'video' && <video controls className="media"><source src={media} type="video/mp4" className="media"/>Your browser does not support the video tag.</video>}
                     {mediaType === 'gif' && <img className="media" src={media} alt={title} />} {/* GIFs can be embedded using the img tag */}
                 </a>
             </div>
@@ -16,7 +16,6 @@ const Project = ({ title, description, technology, githubLink, media, mediaType 
                 <p><strong>Technology Used:</strong> {technology.join(", ")}</p>
                 <a href={githubLink} target="_blank" rel="noreferrer" className="project-link" >View on Github</a>
             </div>
-            
         </div>
     )
 }
