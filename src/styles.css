@@ -4,7 +4,8 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     display: flex;
@@ -36,14 +37,14 @@ img {
     margin: 0px;
     padding: 0px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .col {
@@ -54,12 +55,14 @@ img {
 
 .col-wider {
     flex: 2;
-    border: 2px solid blue; /* blue border for 'col-wider' */
+    border: 2px solid blue;
+    /* blue border for 'col-wider' */
 }
 
 .col-even-wider {
     flex: 3;
-    border: 2px solid green; /* green border for 'col-even-wider' */
+    border: 2px solid green;
+    /* green border for 'col-even-wider' */
 }
 
 .col-center {
@@ -147,7 +150,8 @@ img {
 }
 
 .img-link:hover {
-    transform: scale(1.05);  /* 5% bigger */
+    transform: scale(1.05);
+    /* 5% bigger */
 }
 
 .project-link {
@@ -168,6 +172,7 @@ img {
     margin-top: 50px;
     height: 100px;
     background-color: #333;
+    /* background-color: #0D3B66; */
     color: white;
     display: flex;
     justify-content: center;
@@ -317,6 +322,73 @@ img {
 }
 
 .section-offset {
-    margin-top: -60px;  /* Negative margin of the navbar height */
-    padding-top: 60px;  /* Padding of the navbar height */
-  }
+    margin-top: -60px;
+    /* Negative margin of the navbar height */
+    padding-top: 60px;
+    /* Padding of the navbar height */
+}
+
+ /* how the elements look if loaded on a smaller screen */
+@media (max-width: 768px) {
+
+    .contact-box,
+    .intro-box {
+        max-width: 100%;
+        padding: 10px;
+        margin: 5px auto;
+    }
+
+    .col {
+        flex: 1;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        /* Single column layout */
+    }
+
+    .media,
+    .img-med {
+        max-width: 60%;
+        height: auto;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .intro-row {
+        flex-direction: column;
+    }
+
+    .intro-row .col {
+        flex: none;
+        width: 100%;
+    }
+
+    /* styles that make the contact page appear in a row on a smaller page */
+    .intro-row .img-center img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-row {
+        flex-direction: column;
+    }
+
+    .contact-row .col {
+        flex: none;
+        width: 100%;
+    }
+}

@@ -12,7 +12,7 @@ const Intro = () => {
             <div className="row">
                 <br />
             </div> 
-            <div className="row intro-box">
+            <div className="row intro-box intro-row">
                 <div className="col intro">
                     <p>Hello! I'm Christopher Martinez, a New York City-based Computer Science graduate from Hunter College. My passion lies in software and web development, spanning across several languages including Python, C++, JavaScript, SQL, Swift, HTML, and CSS, along with frameworks/libraries like React and Django.</p>
 

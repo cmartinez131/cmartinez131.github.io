@@ -9,7 +9,7 @@ const Contact = () => {
                     <h1>Contact Me!</h1>
                 </div>
             </div>
-            <div className="row contact-box">
+            <div className="row contact-box contact-row">
                 <div className="col col-center">
                     <h2>Email</h2>
                     <p><a href="mailto:chrismartinez131@gmail.com" className="contact-link">chrismartinez131@gmail.com</a></p>
@@ -30,7 +30,7 @@ const Contact = () => {
                             className="img-med img-link"
                         />
                     </a>
-                    <p>(click to enlarge)</p>
+                    <p style={{ fontSize: '20px' }}>(click to enlarge)</p>
                 </div>
                 <div className="col col-center">
                     <h2>Socials</h2>
