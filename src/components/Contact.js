@@ -3,7 +3,7 @@ import resumePDF from '../assets/resume.pdf';
 
 const Contact = () => {
     return (
-        <div className="container">
+        <div className="container" data-aos="fade-up" data-aos-duration="1000">
             <div className="row">
                 <div className="col col-center">
                     <h1>Contact Me!</h1>

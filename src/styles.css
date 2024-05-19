@@ -44,7 +44,6 @@ img {
 .row {
     display: flex;
     justify-content: space-between;
-
 }
 
 .col {
@@ -56,13 +55,11 @@ img {
 .col-wider {
     flex: 2;
     border: 2px solid blue;
-    /* blue border for 'col-wider' */
 }
 
 .col-even-wider {
     flex: 3;
     border: 2px solid green;
-    /* green border for 'col-even-wider' */
 }
 
 .col-center {
@@ -80,13 +77,15 @@ img {
 }
 
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-around;
     background-color: #0D3B66;
     padding: 10px;
+    z-index: 1000;
 }
 
 .nav-item-container {
@@ -149,11 +148,6 @@ img {
     border-radius: 8px;
 }
 
-.img-link:hover {
-    transform: scale(1.05);
-    /* 5% bigger */
-}
-
 .project-link {
     display: inline-block;
     background-color: #1C7293;
@@ -162,6 +156,7 @@ img {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
 }
 
 .project-link:hover {
@@ -172,7 +167,6 @@ img {
     margin-top: 50px;
     height: 100px;
     background-color: #333;
-    /* background-color: #0D3B66; */
     color: white;
     display: flex;
     justify-content: center;
@@ -181,7 +175,6 @@ img {
     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
     font-weight: 300;
 }
-
 
 .blog-title {
     color: black;
@@ -263,6 +256,7 @@ img {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    margin-top: 20px;
 }
 
 .projects-grid {
@@ -276,6 +270,10 @@ img {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .media {
@@ -288,12 +286,17 @@ img {
     margin-right: auto;
 }
 
+.project-content {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
 .intro-box {
     background-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    margin: 10px auto 0px auto;
+    margin: 15px auto 0px auto;
     max-width: 70%;
     overflow: hidden;
 }
@@ -313,22 +316,18 @@ img {
     height: auto;
     margin: .4rem;
     padding: 10px;
-    /* filter: grayscale(100%);
-    transition: filter 0.3s ease; */
-}
-
-.social-media-button:hover {
-    /* filter: grayscale(0%);   Restore original color on hover */
 }
 
 .section-offset {
-    margin-top: -60px;
-    /* Negative margin of the navbar height */
-    padding-top: 60px;
-    /* Padding of the navbar height */
+    margin-top: 60px;
+    padding-top: 0px;
 }
 
- /* how the elements look if loaded on a smaller screen */
+.projects-container h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
 @media (max-width: 768px) {
 
     .contact-box,
@@ -346,7 +345,6 @@ img {
 
     .projects-grid {
         grid-template-columns: 1fr;
-        /* Single column layout */
     }
 
     .media,
@@ -377,7 +375,6 @@ img {
         width: 100%;
     }
 
-    /* styles that make the contact page appear in a row on a smaller page */
     .intro-row .img-center img {
         width: 100%;
         height: auto;

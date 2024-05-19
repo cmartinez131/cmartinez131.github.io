@@ -2,7 +2,10 @@ import React from 'react';
 
 const Navbar = () => {
     const scrollTo = (sectionId) => {
-        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        const element = document.getElementById(sectionId);
+        const yOffset = -60;
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
     };
 
     return (

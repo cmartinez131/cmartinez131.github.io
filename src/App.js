@@ -1,14 +1,19 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Intro from './components/Intro'
-import Projects from './components/Projects'
 // import Blog from './components/Blog'
-import Contact from './components/Contact'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Navbar from './components/Navbar';
+import Intro from './components/Intro';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './styles.css';
 
-
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="App">
       <Navbar />
