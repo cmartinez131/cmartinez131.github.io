@@ -1,5 +1,5 @@
 {
-  "homepage": "http://cmartinez131.github.io",
+  "homepage": "http://cmartinez131.github.io/personal-website",
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
@@ -41,6 +41,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.1.1"
   }
 }
