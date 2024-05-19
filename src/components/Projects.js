@@ -44,7 +44,7 @@ const Projects = () => {
             description: "A modern website designed to streamline customer bookings for a batting cage business. The site features real-time booking capabilities and user account management for an enhanced customer experience.",
             technology: ["JavaScript", "CSS", "React", "React Router"],
             githubLink: "https://github.com/cmartinez131/batting-cage-business-website",
-            media: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDQxcmw5MGd4MTNhdDNvcWlrYWtvemw5OG9iNzliamk0YnBlc3RscCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qeDgOIcDXTSOO2OOxb/giphy-downsized-large.gif",
+            media: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGFtcjE0bHk2M2I2bGpxMjRzeHZ0ZXQzYjkxcGZ1YjFtMHp6bW0yNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/feHmMr62vssviDO976/giphy.gif",
             mediaType: "image"
         },
         {
