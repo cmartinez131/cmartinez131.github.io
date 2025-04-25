@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.ff4ae80e.css",
-    "main.js": "/static/js/main.2b8a9c1e.js",
+    "main.js": "/static/js/main.628931c1.js",
     "static/media/AStarGridNavigation.mp4": "/static/media/AStarGridNavigation.dca8071712e1c552e6f9.mp4",
+    "static/media/selfie.jpeg": "/static/media/selfie.2a2fc0e14657e1cd400a.jpeg",
     "static/media/DynamicNavmeshGeneration.mp4": "/static/media/DynamicNavmeshGeneration.0479f9d5df268f02c3ef.mp4",
     "static/media/PathNetworkRuntimeGeneration.mp4": "/static/media/PathNetworkRuntimeGeneration.f96881cd3d81bb08064d.mp4",
     "static/media/long_words_more_points.gif": "/static/media/long_words_more_points.12c3930281c554fb50ef.gif",
@@ -16,15 +17,14 @@
     "static/media/resume.pdf": "/static/media/resume.093b0bf7ec1104ea9b0c.pdf",
     "static/media/in_sample_manual_trader.png": "/static/media/in_sample_manual_trader.ba4860d6d6a92b701859.png",
     "static/media/live_leaderboard.png": "/static/media/live_leaderboard.4e6ed45d77ec60829482.png",
-    "static/media/selfie.jpeg": "/static/media/selfie.e5a631a613bd6a860cbe.jpeg",
     "static/media/remove_single_letter.gif": "/static/media/remove_single_letter.6a846cac301981ec5aef.gif",
     "static/media/impact_effect_on_return.png": "/static/media/impact_effect_on_return.021fcbbe569d5f593051.png",
     "index.html": "/index.html",
     "main.ff4ae80e.css.map": "/static/css/main.ff4ae80e.css.map",
-    "main.2b8a9c1e.js.map": "/static/js/main.2b8a9c1e.js.map"
+    "main.628931c1.js.map": "/static/js/main.628931c1.js.map"
   },
   "entrypoints": [
     "static/css/main.ff4ae80e.css",
-    "static/js/main.2b8a9c1e.js"
+    "static/js/main.628931c1.js"
   ]
 }
