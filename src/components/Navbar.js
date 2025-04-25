@@ -1,12 +1,7 @@
 import React from 'react';
+import { scrollTo } from '../utils/scroll';
 
 const Navbar = () => {
-    const scrollTo = (sectionId) => {
-        const element = document.getElementById(sectionId);
-        const yOffset = -60;
-        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: y, behavior: 'smooth' });
-    };
 
     return (
         <nav className="navbar">
