@@ -90,6 +90,34 @@ const Projects = () => {
             isArchived: false,
         },
 
+        // Batting Cage Booking Application 
+        {
+            title: "Booking Web Application Batting Cage Business",
+            description: "A modern website designed to streamline customer bookings for a batting cage business.",
+            fullDescription: "Developed a modern web application to enhance the online presence and streamline customer bookings.",
+            yourContributions: [
+                "Built a modern web application using React and Node.js.",
+                "Implemented real-time booking and secure user authentication via Firebase.",
+                "Embedded Google Maps API for location services.",
+                "Designed responsive UIs with Tailwind-style utility classes.",
+            ],
+            technicalChallenges: [
+                "Real-time booking data synchronization across multiple users.",
+                "Implementing robust authentication and managing access rights.",
+                "Ensuring a seamless booking experience on various devices.",
+            ],
+            keyTechnologies: [
+                "React", "JavaScript", "CSS", "Node.js", "Firebase", "Firebase Firestore", "Firebase Authentication", "React Router", "Tailwind CSS",
+            ],
+            githubLink: "https://github.com/cmartinez131/batting-cage-business-website",
+            liveLink: "https://your-batting-blvd-live-link.com",
+            media: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGFtcjE0bHk2M2I2bGpxMjRzeHZ0ZXQzYjkxcGZ1YjFtMHp6bW0yNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/feHmMr62vssviDO976/giphy.gif",
+            mediaType: "gif",
+            detailedMedia: [],
+            privateCode: false,
+            isArchived: false,
+        },
+
         // Unity C# Path-Planning AI
         {
             title: "Unity C# Path-Planning AI System",
@@ -165,33 +193,6 @@ const Projects = () => {
             isArchived: false,
         },
 
-        // Batting Cage Booking Application 
-        {
-            title: "Booking Web Application Batting Cage Business",
-            description: "A modern website designed to streamline customer bookings for a batting cage business.",
-            fullDescription: "Developed a modern web application to enhance the online presence and streamline customer bookings.",
-            yourContributions: [
-                "Built a modern web application using React and Node.js.",
-                "Implemented real-time booking and secure user authentication via Firebase.",
-                "Embedded Google Maps API for location services.",
-                "Designed responsive UIs with Tailwind-style utility classes.",
-            ],
-            technicalChallenges: [
-                "Real-time booking data synchronization across multiple users.",
-                "Implementing robust authentication and managing access rights.",
-                "Ensuring a seamless booking experience on various devices.",
-            ],
-            keyTechnologies: [
-                "React", "JavaScript", "CSS", "Node.js", "Firebase", "Firebase Firestore", "Firebase Authentication", "React Router", "Tailwind CSS",
-            ],
-            githubLink: "https://github.com/cmartinez131/batting-cage-business-website",
-            liveLink: "https://your-batting-blvd-live-link.com",
-            media: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGFtcjE0bHk2M2I2bGpxMjRzeHZ0ZXQzYjkxcGZ1YjFtMHp6bW0yNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/feHmMr62vssviDO976/giphy.gif",
-            mediaType: "gif",
-            detailedMedia: [],
-            privateCode: false,
-            isArchived: false,
-        },
 
         // Word Drop (Reddit Devvit Hackathon)
         {

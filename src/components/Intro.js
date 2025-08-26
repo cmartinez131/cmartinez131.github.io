@@ -15,17 +15,27 @@ const Intro = () => {
                 <div className="col intro">
                     {/* Introduction Text */}
                     <h1>Christopher Martinez</h1> {/* Use a heading for your name */}
-                    <h2>Software Engineer | MS CS @ Georgia Tech</h2> {/* Clear headline highlighting your role and degree */}
-
+                    <h2>Software Engineer | Master's CS Student @ Georgia Tech</h2> {/* Clear headline highlighting your role and degree */}
                     <p>
-                        I'm a Computer Science graduate from Hunter College and currently pursuing a Master's in Computer Science at Georgia Institute of Technology, specializing in Machine Learning and AI. My passion lies in building interactive real-time software applications and engaging user experiences.
-                    </p>
-                    <p>
-                        Throughout my journey, I've developed a range of applications, from a real-time multiplayer drawing game and dynamic websites to mobile applications and complex AI systems for game environments. I enjoy tackling technical challenges and creating software that provides utility and entertainement for users.
+                        I’m a Computer Science graduate from Hunter College and I’m pursuing a Master’s in Computer Science at Georgia Tech.
+                        I build reliable backend and data systems that power real products. I've also built full-stack applications.
                     </p>
 
+
                     <p>
-                        When I'm not coding, I'm often traveling and enjoying sports, particularly baseball. I appreciate the similarities between the strategic thinking, teamwork, and adaptability required in both baseball and software engineering.
+                        Recent work includes an MLB analytics API in Python with FastAPI and pandas.
+                        I designed and built a pipeline that ingests baseball data from multiple sources, cleans it, performs feature engineering, 
+                        and serves metrics through a Dockerized service on AWS. 
+                    </p>
+
+                    <p>
+                        I’ve built a range of applications, including a real-time multiplayer drawing game, modern web apps, 
+                        and an AI system for a game environment.
+                    </p>
+
+                    <p>
+                        When I’m not coding, I'm often traveling and enjoying sports, particularly baseball. 
+                        I like how both baseball and software reward strategy, teamwork, and adaptability.
                     </p>
 
                     <p>
