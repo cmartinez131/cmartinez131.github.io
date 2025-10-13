@@ -1,5 +1,5 @@
 import React from 'react';
-import selfieImage from '../assets/selfie.jpeg';
+import selfieImage from '../assets/headshot.jpeg';
 import { scrollTo } from '../utils/scroll';
 
 const Intro = () => {

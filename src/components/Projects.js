@@ -32,8 +32,8 @@ const Projects = () => {
     // State to control showing of archived projects
     const [showArchived, setShowArchived] = useState(false);
 
-    const openModal  = (proj) => { setSelectedProject(proj); setIsModalOpen(true);  };
-    const closeModal = ()     => { setIsModalOpen(false);   setSelectedProject(null); };
+    const openModal = (proj) => { setSelectedProject(proj); setIsModalOpen(true); };
+    const closeModal = () => { setIsModalOpen(false); setSelectedProject(null); };
 
     // togglefunction for archived projects
     const toggleShowArchived = () => {
@@ -43,6 +43,61 @@ const Projects = () => {
 
     // PROJECT DATA
     const projectData = [
+
+        // SaberGraphs
+        {
+            title: "SaberGraphs - Data Visualization Tool for Baseball Analytics",
+            description: "Natural-language baseball analytics that turns plain-English prompts into interactive Nivo charts and projections.",
+            fullDescription:
+                "End-to-end web app where the React front end sends a prompt to a FastAPI backend. An NL-to-SQL/agent layer plans and executes queries on PostgreSQL, then returns a canonical payload { chart_type, series, meta, narration } for the UI to render with Nivo. Includes player comparisons, career arcs, leaderboards, percentiles, histograms, radar multi-stat, and a baseline projection module.",
+            yourContributions: [
+                "Designed the full system and data flow from prompt ingestion to chart rendering with a consistent response shape.",
+                "Built FastAPI endpoints with SQLAlchemy models and added deterministic fallbacks for season ranges and player compares.",
+                "Developed the analytics toolkit for leaderboards, range aggregates, career arcs, percentiles, histograms, multi-stat compare, and PA qualification rules.",
+                "Created the React UI with ChartRenderer, CSV/PNG export, label mapping, theme switching, and a conversation history view.",
+                "Containerized database, backend, and frontend with Docker Compose and environment-based configuration."
+            ],
+            technicalChallenges: [
+                "Pulling and reconciling data from multiple sources (Baseball Savant and the MLB API).",
+                "Handling edge cases that caused incorrect stats to appear and building guardrails to prevent bad results.",
+                "Designing a stable canonical chart payload and keeping all fetching and chart logic on the backend."
+            ],
+            keyTechnologies: [
+                "Python", "FastAPI", "SQLAlchemy", "React", "Nivo",
+                "PostgreSQL", "Docker", "OpenAI API", "pandas", "NumPy"
+            ],
+            githubLink: null,           // repo is private
+            liveLink: "https://sabergraphs.com/",
+            // thumbnail in the grid (local asset)
+            media: new URL("../assets/saber-graphs/sg_home_screen.png", import.meta.url).href,
+            mediaType: "image",
+            detailedMedia: [
+                {
+                    src: new URL("../assets/saber-graphs/sg_judge_vs_soto_hr.png", import.meta.url).href,
+                    type: "image",
+                    caption: "Compare players: Judge vs Soto HR"
+                },
+                {
+                    src: new URL("../assets/saber-graphs/sg_top_10_total_bases.png", import.meta.url).href,
+                    type: "image",
+                    caption: "Top 10 Total Bases"
+                },
+                {
+                    src: new URL("../assets/saber-graphs/sg_bottom_10_so.png", import.meta.url).href,
+                    type: "image",
+                    caption: "Bottom 10 Strikeout %"
+                },
+                {
+                    src: new URL("../assets/saber-graphs/sg_loading_screen.png", import.meta.url).href,
+                    type: "image",
+                    caption: "Loading and theme preview"
+                }
+            ],
+            privateCode: true,
+            privateCodeExplanation: "Private repo; live demo available at sabergraphs.com.",
+            isArchived: false
+        },
+
 
         // Real-Time Multiplayer Drawing Game
         {
@@ -110,7 +165,7 @@ const Projects = () => {
                 "React", "JavaScript", "CSS", "Node.js", "Firebase", "Firebase Firestore", "Firebase Authentication", "React Router", "Tailwind CSS",
             ],
             githubLink: "https://github.com/cmartinez131/batting-cage-business-website",
-            liveLink: "https://your-batting-blvd-live-link.com",
+            liveLink: "https://batting-cage-app.web.app/",
             media: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGFtcjE0bHk2M2I2bGpxMjRzeHZ0ZXQzYjkxcGZ1YjFtMHp6bW0yNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/feHmMr62vssviDO976/giphy.gif",
             mediaType: "gif",
             detailedMedia: [],
@@ -159,7 +214,7 @@ const Projects = () => {
         // MACHINE-LEARNING TRADING STRATEGY EVALUATION
         {
             title: "Trading Strategy Evaluation – Manual Indicators Rules vs Q-Learning Reinforcement Learning",
-            description:"Compared a rules-based trading strategy using technical indicators against a Q-Learning agent on JPM stock. Both strategies outperformed the benchmark in-sample; analyzed out-of-sample performance and market impact effects.",
+            description: "Compared a rules-based trading strategy using technical indicators against a Q-Learning agent on JPM stock. Both strategies outperformed the benchmark in-sample; analyzed out-of-sample performance and market impact effects.",
             fullDescription: "Implemented and compared two trading strategies for the JPM ticker: (1) a manual, rules-based engine using Bollinger Band Percentage (BBP), 5-day Momentum, and 14-day Stochastic Oscillator (STO) signals with specific thresholds; (2) a reinforcement learning agent based on Q-Learning. The Q-Learner utilized a discretized state space (82 states) derived from binned values of the same technical indicators combined with the agent's current holding position (-1000, 0, or +1000 shares). Conducted comprehensive backtesting including in-sample training/evaluation (2008-2009), out-of-sample testing (2010-2011) (Experiment 1), and a sensitivity analysis sweeping five levels of market impact (0% to 2%) (Experiment 2). Generated detailed performance plots and statistical comparisons using Matplotlib for the final report, evaluating cumulative returns and volatility.",
             yourContributions: [
                 "Developed two distinct trading strategies: a rule-based manual system using technical indicators, and a Q-Learning agent built from scratch with custom state discretization and reward logic.",
@@ -174,14 +229,14 @@ const Projects = () => {
                 "Effectively translating complex quantitative results and model behavior into clear visualizations and concise analytical reporting."
             ],
             keyTechnologies: [
-                "Python", "Pandas",  "NumPy", "Matplotlib", "Reinforcement Learning", "Q-Learning"
+                "Python", "Pandas", "NumPy", "Matplotlib", "Reinforcement Learning", "Q-Learning"
             ],
             githubLink: null,
             liveLink: null,
             privateCode: true,
             privateCodeExplanation: "Developed as part of a Georgia Tech course. Source code available upon request.",
             // thumbnail in grid
-            media: mlInSampleComparison,          
+            media: mlInSampleComparison,
             mediaType: "image",
             detailedMedia: [
                 { src: mlInSampleManual, type: "image", caption: "In-sample – Manual Strategy vs. Benchmark" },
@@ -342,55 +397,55 @@ const Projects = () => {
         if (showArchived) {
             // If showing archived, show all projects
             return true;
-            } else {
+        } else {
             // If not showing archived, only show projects where isArchived is false
             return !project.isArchived;
         }
     });
 
 
-  return (
-    <div className="projects-container">
-        <h1>Projects</h1>
+    return (
+        <div className="projects-container">
+            <h1>Projects</h1>
 
-        {/* Projects Grid */}
-        <div className="projects-grid">
-            {/* map through the filteredProjects array */}
-            {filteredProjects.map((p, idx) => (
-                <div
-                    key={idx}
-                    className="project-box"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay={idx * 100}
-                >
-                <div className="project-clickable-area" onClick={() => openModal(p)}>
-                    <Project
-                        title={p.title}
-                        description={p.description}
-                        technology={p.keyTechnologies || p.technology}
-                        media={p.media}
-                        mediaType={p.mediaType}
-                    />
-                </div>
+            {/* Projects Grid */}
+            <div className="projects-grid">
+                {/* map through the filteredProjects array */}
+                {filteredProjects.map((p, idx) => (
+                    <div
+                        key={idx}
+                        className="project-box"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay={idx * 100}
+                    >
+                        <div className="project-clickable-area" onClick={() => openModal(p)}>
+                            <Project
+                                title={p.title}
+                                description={p.description}
+                                technology={p.keyTechnologies || p.technology}
+                                media={p.media}
+                                mediaType={p.mediaType}
+                            />
+                        </div>
+                    </div>
+                ))}
             </div>
-            ))}
+
+
+            {/* Toggle Button for Archived Projects */}
+            <div className="archive-toggle-container">
+                <button onClick={toggleShowArchived}>
+                    {showArchived ? 'Hide Archived Projects' : 'Show Archived Projects'}
+                </button>
+            </div>
+
+
+            {isModalOpen && (
+                <ProjectDetailModal project={selectedProject} onClose={closeModal} />
+            )}
         </div>
-        
-
-        {/* Toggle Button for Archived Projects */}
-        <div className="archive-toggle-container">
-            <button onClick={toggleShowArchived}>
-            {showArchived ? 'Hide Archived Projects' : 'Show Archived Projects'}
-            </button>
-        </div>
-
-
-        {isModalOpen && (
-            <ProjectDetailModal project={selectedProject} onClose={closeModal} />
-        )}
-    </div>
-  );
+    );
 };
 
 export default Projects;
