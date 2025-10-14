@@ -35,7 +35,7 @@ const Intro = () => {
                         </li>
                     </ul>
 
-                    <p>Outside of work, I like to travel and follow sports, especially baseball.</p>
+                    <p>Outside of work, I like to travel and enjoys sports.</p>
 
                     <p>
                         Explore my{' '}
