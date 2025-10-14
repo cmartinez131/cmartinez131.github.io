@@ -391,3 +391,17 @@ img {
         width: 100%;
     }
 }
+
+.project-title {
+    font-weight: bold;
+}
+
+.intro ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 25px;
+}
+
+.intro li {
+    margin-bottom: 0.6em;
+}

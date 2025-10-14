@@ -5,8 +5,8 @@ import { scrollTo } from '../utils/scroll';
 const Intro = () => {
 
     return (
-        
-        <div id="intro-section" className="container" data-aos="fade-up" data-aos-duration="1000">
+
+        <div id="intro-section" className="container" data-aos="fade-up" data-aos-duration="300">
             <div className="row">
                 <br />
             </div>
@@ -14,38 +14,46 @@ const Intro = () => {
                 {/* Left Column for Text */}
                 <div className="col intro">
                     {/* Introduction Text */}
-                    <h1>Christopher Martinez</h1> {/* Use a heading for your name */}
-                    <h2>Software Engineer | Master's CS Student @ Georgia Tech</h2> {/* Clear headline highlighting your role and degree */}
+                    <h1>Christopher Martinez</h1>
+                    <h2>Software Engineer | MS CS Student @ Georgia Tech</h2>
                     <p>
-                        I’m a Computer Science graduate from Hunter College and I’m pursuing a Master’s in Computer Science at Georgia Tech.
-                        I build reliable backend and data systems that power real products. I've also built full-stack applications.
+                        I earned a BS in Computer Science from Hunter College and I am pursuing an MS in Computer Science at Georgia Tech.
+                        I design and ship software and data solutions end to end, from APIs and web apps to pipelines, analytics, and ML.
                     </p>
 
+                    {/* Updated Projects Section with Bullet Points */}
+                    <p>Some of my recent projects include:</p>
+                    <ul>
+                        <li>
+                            <span className="project-title">MLB analytics API</span> that ingests baseball data from multiple sources and serves a custom baseball metric, Veteran Presence (VP), built with Python, FastAPI, and pandas, served via a Docker-based service on AWS.
+                        </li>
+                        <li>
+                            <span className="project-title">SaberGraphs</span>, an AI-driven sports analytics web app that turns natural language questions into interactive charts for data visualization and analysis with exportable csv files and charts using FastAPI and React.
+                        </li>
+                        <li>
+                            A real-time <span className="project-title">multiplayer drawing game</span> using websockets, and a full-stack <span className="project-title">booking application</span>, among several other React projects.
+                        </li>
+                    </ul>
+
+                    <p>Outside of work, I like to travel and follow sports, especially baseball.</p>
 
                     <p>
-                        Recent work includes an MLB analytics API in Python with FastAPI and pandas.
-                        I designed and built a pipeline that ingests baseball data from multiple sources, cleans it, performs feature engineering, 
-                        and serves metrics through a Dockerized service on AWS. 
-                    </p>
-
-                    <p>
-                        I’ve built a range of applications, including a real-time multiplayer drawing game, modern web apps, 
-                        and an AI system for a game environment.
-                    </p>
-
-                    <p>
-                        When I’m not coding, I'm often traveling and enjoying sports, particularly baseball. 
-                        I like how both baseball and software reward strategy, teamwork, and adaptability.
-                    </p>
-
-                    <p>
-                        Explore my <span className="intro-link" onClick={() => scrollTo('projects')}>projects</span> to see my work, or connect with me on <a className="intro-link" href="https://www.linkedin.com/in/cmartinez131" target="_blank" rel="noopener noreferrer">LinkedIn</a> or <a className="intro-link" href="https://github.com/cmartinez131" target="_blank" rel="noopener noreferrer">GitHub</a>.
+                        Explore my{' '}
+                        <a 
+                            className="intro-link" 
+                            href="#projects" 
+                            onClick={(e) => { e.preventDefault(); scrollTo('projects'); }}
+                        >
+                            projects
+                        </a> or{' '}
+                        <a className="intro-link" href="https://github.com/cmartinez131" target="_blank" rel="noopener noreferrer">GitHub</a>{' '}
+                        to see my work, or connect with me on{' '}
+                        <a className="intro-link" href="https://www.linkedin.com/in/cmartinez131" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
                     </p>
                 </div>
 
                 {/* Right Column for Image */}
                 <div className="col img-center">
-                    {/* Made the image itself clickable to scroll to contact, kept img-link div for styling */}
                     <img
                         className="img-med img-link"
                         src={selfieImage}
