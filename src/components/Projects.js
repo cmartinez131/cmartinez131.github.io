@@ -24,16 +24,16 @@ const Projects = () => {
             fullDescription:
                 "One request in, one clear response out. The React frontend sends your prompt to a FastAPI backend, an agent maps it to the right toolkit function, the toolkit queries PostgreSQL, and the result comes back as a standard payload { chart_type, series, narration, meta }. The UI renders it with Nivo and lets you export PNG or CSV. It handles comparisons, career trends, percentiles, leaderboards, and early projections. Pitching and defense are next.",
             yourContributions: [
-                "Designed the end to end architecture: data model, analytics toolkit, agent, and React renderer.",
+                "Designed the end to end architecture: data model, analytics toolkit, agent, and React frontend chart renderer.",
                 "Built the Python toolkit for player comparisons, career arcs, leaderboards, percentiles, rolling averages, and multi-stat views.",
                 "Implemented projection methods: trailing-years baseline plus aging with KNN comps (p10–p90 bands).",
-                "Defined a stable canonical chart payload and a ChartRenderer that maps it to bar and line charts.",
+                "Defined a stable chart payload and a ChartRenderer that maps it to bar and line charts.",
                 "Added CSV/PNG export and a label map so stat aliases resolve cleanly in prompts and charts."
             ],
             technicalChallenges: [
                 "Pulling data from multiple sources (Baseball Savant and the MLB API).",
                 "Handling edge cases that produced incorred adding guardrails to prevent bad results.",
-                "Designing a stable canonical chart payload and keeping all the fetching ct stats anand chart logic on the backend."
+                "Designing a stable chart payload and keeping all the fetching stats and chart logic on the backend."
             ],
             keyTechnologies: [
                 "Python", "FastAPI", "SQLAlchemy", "PostgreSQL", "pandas", "NumPy", "scikit-learn",
@@ -53,7 +53,78 @@ const Projects = () => {
             privateCodeExplanation: "Private repo; live demo available at sabergraphs.com.",
             isArchived: false
         },
+        
+        // ABS Challenge Strategy — add after SaberGraphs
+        {
+            title: "ABS Challenge Strategy — Reinforcement Learning Research",
+            description:
+                "Trained a Q-learning agent to optimize MLB pitch challenge decisions under the new ABS system. Presented at the SABR Analytics Conference 2026.",
+            fullDescription:
+                "Framed MLB's new ABS challenge system as a Markov Decision Process and solved it with tabular Q-learning. Each team gets 2 challenges per game, retained if successful, shared across offense and defense. The agent learns when to spend this limited resource by simulating every game from both the home and away team's perspective. It discovered two emergent strategies: challenge obvious misses in any count (97% success rate), and additionally challenge borderline pitches in 2-strike counts to prevent strikeouts. The agent achieves a 68.5% success rate compared to 19-25% for baselines, projecting to +3.26 wins per season.",
+            yourContributions: [
+                "Designed the per-team simulation framework with a shared challenge budget across offense and defense.",
+                "Built the full data pipeline: collection from MLB Statcast (93,000 pitches), preprocessing, RE24 reward calculation, and feature engineering.",
+                "Implemented tabular Q-learning with Dyna-Q replay and a 5,184-state encoding including a perspective dimension for offense vs defense.",
+                "Ran ablation studies across discount factors and inning bucketing schemes to validate hyperparameter choices.",
+                "Performed bootstrap significance testing (p < 0.001) and wrote the full conference paper."
+            ],
+            technicalChallenges: [
+                "Simulating challenge outcomes without real ABS data by modeling overturn probability from pitch tracking location.",
+                "Discovering that gamma=0.9 caused budget depletion by the 5th inning in 57% of games, and that gamma=0.99 fixed this without reducing total value.",
+                "Balancing state space granularity against data sparsity: per-inning models captured 9th-inning dynamics but underperformed coarser models with limited data."
+            ],
+            keyTechnologies: [
+                "Python", "pandas", "NumPy", "scikit-learn", "Matplotlib",
+                "Reinforcement Learning", "Q-Learning", "pybaseball"
+            ],
+            githubLink: "https://github.com/cmartinez131/sabr-abs-challenge",
+            liveLink: null,
+            media: new URL("../assets/abs-challenge/challenge_rate_by_inning.png", import.meta.url).href,
+            mediaType: "image",
+            detailedMedia: [
+                { src: new URL("../assets/abs-challenge/reward_comparison.png", import.meta.url).href, type: "image", caption: "Policy performance comparison" },
+                { src: new URL("../assets/abs-challenge/challenge_rate_by_inning.png", import.meta.url).href, type: "image", caption: "Challenge rate by inning" },
+                { src: new URL("../assets/abs-challenge/projected_wins.png", import.meta.url).href, type: "image", caption: "Projected wins per season" },
+                { src: new URL("../assets/abs-challenge/training_progress_4bucket.png", import.meta.url).href, type: "image", caption: "Training convergence over 200 epochs" }
+            ],
+            privateCode: false,
+            isArchived: false,
+        },
 
+        // MLB Analytics API
+        {
+            title: "MLB Analytics API",
+            description:
+                "A REST API that ingests baseball data from multiple sources and serves a custom baseball metric, Veteran Presence (VP), built with Python, FastAPI, and pandas, deployed via Docker on AWS.",
+            fullDescription:
+                "Built a backend API service that pulls data from Baseball Savant and the MLB Stats API, computes a custom composite metric called Veteran Presence (VP), and serves it through RESTful endpoints. The service runs in a Docker container deployed on AWS. VP combines experience, consistency, and clutch performance indicators into a single interpretable score for evaluating player contributions beyond traditional stats.",
+            yourContributions: [
+                "Designed and built the FastAPI backend with endpoints for player lookup, team aggregation, and leaderboard queries.",
+                "Engineered the Veteran Presence metric by combining multiple data sources and weighting factors.",
+                "Containerized the application with Docker and deployed to AWS.",
+                "Built the data ingestion pipeline using pandas to pull and merge data from Baseball Savant and MLB Stats API."
+            ],
+            technicalChallenges: [
+                "Merging data from multiple sources with inconsistent player identifiers and schemas.",
+                "Designing a composite metric that is both statistically meaningful and interpretable to a baseball audience.",
+                "Optimizing query performance for leaderboard endpoints across full-season datasets."
+            ],
+            keyTechnologies: [
+                "Python", "FastAPI", "pandas", "Docker", "AWS", "REST APIs"
+            ],
+            githubLink: "https://github.com/cmartinez131/umpire-batter-analytics-api",
+            liveLink: null,
+            media: null,
+            mediaType: "image",
+            detailedMedia: [
+                // { src: new URL("../assets/abs-challenge/reward_comparison.png", import.meta.url).href, type: "image", caption: "Policy performance comparison" },
+                // { src: new URL("../assets/abs-challenge/challenge_rate_by_inning.png", import.meta.url).href, type: "image", caption: "Challenge rate by inning" },
+                // { src: new URL("../assets/abs-challenge/projected_wins.png", import.meta.url).href, type: "image", caption: "Projected wins per season" },
+                // { src: new URL("../assets/abs-challenge/training_progress_4bucket.png", import.meta.url).href, type: "image", caption: "Training convergence over 200 epochs" }
+            ],
+            privateCode: false,
+            isArchived: false,
+        },
 
         // Real-Time Multiplayer Drawing Game
         {
@@ -78,7 +149,7 @@ const Projects = () => {
 
         // Batting Cage Booking Application 
         {
-            title: "Booking Web Application Batting Cage Business",
+            title: "Full Stack Booking Web Application Batting Cage Business",
             description: "A modern website designed to streamline customer bookings for a batting cage business.",
             fullDescription: "Developed a modern web application to enhance the online presence and streamline customer bookings.",
             yourContributions: ["Built a modern web application using React and Node.js.", "Implemented real-time booking and secure user authentication via Firebase.", "Embedded Google Maps API for location services.", "Designed responsive UIs with Tailwind-style utility classes."],

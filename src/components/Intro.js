@@ -17,25 +17,19 @@ const Intro = () => {
                     <h1>Christopher Martinez</h1>
                     <h2>Software Engineer | MS CS Student @ Georgia Tech</h2>
                     <p>
-                        I earned a BS in Computer Science from Hunter College and I am pursuing an MS in Computer Science at Georgia Tech.
-                        I design and ship software and data solutions end to end, from APIs and web apps to pipelines, analytics, and ML.
+                        I earned a BS in Computer Science from Hunter College and I'm
+                        pursuing an MS in Computer Science at Georgia Tech, specializing
+                        in machine learning. I build full-stack applications and currently learning machine learning. Recently, I designed a reinforcement
+                        learning system for MLB challenge strategy that I presented at the {' '}
+                        <a className="intro-link" href="https://sabergraphs.com/" target="_blank" rel="noopener noreferrer">SABR Analytics Conference 2026</a>, and I'm currently building{' '}
+                        <a className="intro-link" href="https://sabergraphs.com/" target="_blank" rel="noopener noreferrer">SaberGraphs</a>,
+                        a full-stack AI app that turns natural language
+                        questions into interactive baseball data visualizations. I
+                        previously contributed to pip, the Python package manager, as
+                        a software engineering mentee at Two Sigma.
                     </p>
 
-                    {/* Updated Projects Section with Bullet Points */}
-                    <p>Some of my recent projects include:</p>
-                    <ul>
-                        <li>
-                            <span className="project-title">MLB analytics API</span> that ingests baseball data from multiple sources and serves a custom baseball metric, Veteran Presence (VP), built with Python, FastAPI, and pandas, served via a Docker-based service on AWS.
-                        </li>
-                        <li>
-                            <span className="project-title">SaberGraphs</span>, an AI-driven sports analytics web app that turns natural language questions into interactive charts for data visualization and analysis with exportable csv files and charts using FastAPI and React.
-                        </li>
-                        <li>
-                            A real-time <span className="project-title">multiplayer drawing game</span> using websockets, and a full-stack <span className="project-title">booking application</span>, among several other React projects.
-                        </li>
-                    </ul>
-
-                    <p>Outside of work, I like to travel and enjoys sports.</p>
+                    <p>Outside of work, I'm a baseball fan who builds side projects around the sport.</p>
 
                     <p>
                         Explore my{' '}
@@ -45,9 +39,9 @@ const Intro = () => {
                             onClick={(e) => { e.preventDefault(); scrollTo('projects'); }}
                         >
                             projects
-                        </a> or{' '}
-                        <a className="intro-link" href="https://github.com/cmartinez131" target="_blank" rel="noopener noreferrer">GitHub</a>{' '}
-                        to see my work, or connect with me on{' '}
+                        </a> below or on{' '}
+                        <a className="intro-link" href="https://github.com/cmartinez131" target="_blank" rel="noopener noreferrer">GitHub</a>{''}
+                        . Connect with me on{' '}
                         <a className="intro-link" href="https://www.linkedin.com/in/cmartinez131" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
                     </p>
                 </div>
