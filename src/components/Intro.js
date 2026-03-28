@@ -17,11 +17,11 @@ const Intro = () => {
                     <h1>Christopher Martinez</h1>
                     <h2>Software Engineer | MS CS Student @ Georgia Tech</h2>
                     <p>
-                        I earned a BS in Computer Science from Hunter College and I'm
+                        I earned a BS in Computer Science from Hunter College, and I'm
                         pursuing an MS in Computer Science at Georgia Tech, specializing
-                        in machine learning. I build full-stack applications and currently learning machine learning. Recently, I designed a reinforcement
-                        learning system for MLB challenge strategy that I presented at the {' '}
-                        <a className="intro-link" href="https://sabergraphs.com/" target="_blank" rel="noopener noreferrer">SABR Analytics Conference 2026</a>, and I'm currently building{' '}
+                        in machine learning. I build full-stack applications and continue to expand my AI/ML skill set. Recently, I designed a reinforcement
+                        learning system for an MLB challenge strategy that I presented at the {' '}
+                        <a className="intro-link" href="https://sabergraphs.com/" target="_blank" rel="noopener noreferrer">SABR Analytics Conference 2026</a>. I'm currently building{' '}
                         <a className="intro-link" href="https://sabergraphs.com/" target="_blank" rel="noopener noreferrer">SaberGraphs</a>,
                         a full-stack AI app that turns natural language
                         questions into interactive baseball data visualizations. I
