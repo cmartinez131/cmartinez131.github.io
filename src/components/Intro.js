@@ -15,7 +15,7 @@ const Intro = () => {
                 <div className="col intro">
                     {/* Introduction Text */}
                     <h1>Christopher Martinez</h1>
-                    <h2>Software Engineer | MS CS Student @ Georgia Tech</h2>
+                    <h2 style={{ fontSize: '1.1em' }}>Software Engineer | M.S. CS @ Georgia Tech</h2>
                     <p>
                         I earned a BS in Computer Science from Hunter College, and I'm
                         pursuing an MS in Computer Science at Georgia Tech, specializing
