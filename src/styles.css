@@ -25,6 +25,7 @@ img {
 .img-med {
     width: 75%;
     height: auto;
+    max-width: 350px;
 }
 
 .headshot {
@@ -298,7 +299,7 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     margin: 15px auto 0px auto;
-    max-width: 70%;
+    max-width: 80%;
     overflow: hidden;
 }
 
@@ -308,7 +309,7 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 10px auto;
-    max-width: 75%;
+    max-width: 70%;
     overflow: hidden;
 }
 
