@@ -68,7 +68,7 @@ const projectGroups = [
             {
                 id: 'abs',
                 title: 'ABS Challenge Strategy',
-                blurb: "Reinforcement learning applied to MLB's new robot-umpire challenge system. The agent hit a 68.5% success rate against a 19-25% league baseline. Presented at the SABR Analytics Conference 2026.",
+                blurb: "Reinforcement learning applied to MLB's new robot-umpire challenge system. Presented at the SABR Analytics Conference 2026.",
                 year: 2026,
                 status: 'Presented at SABR 2026',
                 tech: ['Python', 'Q-Learning', 'pybaseball'],
