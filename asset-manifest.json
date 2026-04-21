@@ -1,39 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.8bfbd1e3.css",
-    "main.js": "/static/js/main.814be087.js",
-    "static/media/AStarGridNavigation.mp4": "/static/media/AStarGridNavigation.dca8071712e1c552e6f9.mp4",
-    "static/media/DynamicNavmeshGeneration.mp4": "/static/media/DynamicNavmeshGeneration.0479f9d5df268f02c3ef.mp4",
-    "static/media/PathNetworkRuntimeGeneration.mp4": "/static/media/PathNetworkRuntimeGeneration.f96881cd3d81bb08064d.mp4",
-    "static/media/long_words_more_points.gif": "/static/media/long_words_more_points.12c3930281c554fb50ef.gif",
+    "main.css": "/static/css/main.3e3a6084.css",
+    "main.js": "/static/js/main.02136635.js",
     "static/media/sg_home_screen.png": "/static/media/sg_home_screen.501ddd30139e219efa2d.png",
-    "static/media/sg_loading_screen.png": "/static/media/sg_loading_screen.cb0e3ab11ffcaa442908.png",
     "static/media/word_drop_drag.gif": "/static/media/word_drop_drag.06b51d7bb1d412fece24.gif",
-    "static/media/sg_top_10_total_bases.png": "/static/media/sg_top_10_total_bases.5d3ecb42a29130f0fba6.png",
-    "static/media/sg_judge_vs_soto_hr.png": "/static/media/sg_judge_vs_soto_hr.919a80ea22263567c5c3.png",
-    "static/media/sg_bottom_10_so.png": "/static/media/sg_bottom_10_so.befad55968741a75f371.png",
-    "static/media/training_progress_4bucket.png": "/static/media/training_progress_4bucket.d9b3304a8bcb51f05c71.png",
     "static/media/GridLattice.png": "/static/media/GridLattice.30eac2bd3b34e5007b1e.png",
-    "static/media/challenge_rate_by_inning.png": "/static/media/challenge_rate_by_inning.afb8ce08a450e8671138.png",
-    "static/media/resume.png": "/static/media/resume.4b0f2cd363ee793232fd.png",
-    "static/media/reddit_developer_platform.png": "/static/media/reddit_developer_platform.8a2bce510dd8660569f1.png",
-    "static/media/reward_comparison.png": "/static/media/reward_comparison.d85a58d055e0924165c2.png",
     "static/media/projected_wins.png": "/static/media/projected_wins.d55e03dea287bbaacaad.png",
     "static/media/resume.pdf": "/static/media/resume.dfc444dd312e539603b6.pdf",
-    "static/media/out_sample_manual_vs_qlearner.png": "/static/media/out_sample_manual_vs_qlearner.ef6902c6d88e45538056.png",
-    "static/media/out_sample_manual_trader.png": "/static/media/out_sample_manual_trader.26d8204608fb2760ac42.png",
     "static/media/in_sample_manual_vs_qlearner.png": "/static/media/in_sample_manual_vs_qlearner.a5a92b4e74ebfd225ab6.png",
-    "static/media/in_sample_manual_trader.png": "/static/media/in_sample_manual_trader.ba4860d6d6a92b701859.png",
-    "static/media/live_leaderboard.png": "/static/media/live_leaderboard.4e6ed45d77ec60829482.png",
-    "static/media/remove_single_letter.gif": "/static/media/remove_single_letter.6a846cac301981ec5aef.gif",
-    "static/media/impact_effect_on_return.png": "/static/media/impact_effect_on_return.021fcbbe569d5f593051.png",
     "static/media/headshot.jpeg": "/static/media/headshot.cb306b1dadf6c5cf463a.jpeg",
     "index.html": "/index.html",
-    "main.8bfbd1e3.css.map": "/static/css/main.8bfbd1e3.css.map",
-    "main.814be087.js.map": "/static/js/main.814be087.js.map"
+    "main.3e3a6084.css.map": "/static/css/main.3e3a6084.css.map",
+    "main.02136635.js.map": "/static/js/main.02136635.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bfbd1e3.css",
-    "static/js/main.814be087.js"
+    "static/css/main.3e3a6084.css",
+    "static/js/main.02136635.js"
   ]
 }
