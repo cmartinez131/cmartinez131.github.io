@@ -17,7 +17,7 @@ const experiences = [
     {
         company: 'Grizz the Beagle',
         role: 'Software Engineer',
-        period: 'May 2025 — Present',
+        period: 'March 2026 — Present',
         where: 'New York, NY',
         bullets: [
             'Automated over 80% of routine customer inquiries using a production RAG chatbot (FastAPI, Claude Haiku) integrated with a no-code Google Sheets knowledge base.',
