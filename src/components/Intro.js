@@ -9,20 +9,47 @@ import resumePDF from '../assets/resume.pdf';
 import { scrollTo } from '../utils/scroll';
 
 const credentials = [
-    { label: 'M.S., CS', detail: 'Georgia Tech · ML' },
+    { label: 'M.S., CS (AI)', detail: 'Georgia Tech' },
     { label: 'B.S., CS', detail: 'Hunter College' },
 ];
 
 const experiences = [
     {
-        company: 'Grizz the Beagle',
-        role: 'Software Engineer',
-        period: 'March 2026 — Present',
+        company: 'Fetch & Fable',
+        role: 'Software Engineer and Founder',
+        period: 'May 2026 — Present',
         where: 'New York, NY',
         bullets: [
-            'Automated over 80% of routine customer inquiries using a production RAG chatbot (FastAPI, Claude Haiku) integrated with a no-code Google Sheets knowledge base.',
-            'Decreased average response times from 8+ hours to under 3 seconds by deploying a stateless, vanilla-JS chat widget directly within the Shopify theme code.',
-            'Architected a full-stack analytics pipeline (Next.js, Postgres) with nightly ETL jobs to ingest Shopify, Meta Ads, and chatbot data into a unified platform, providing daily auto-generated insights.',
+            <>
+                Built and launched{' '}
+                <a
+                    className="intro-link"
+                    href="https://www.fetchandfable.co/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    fetchandfable.co
+                </a>
+                , a full-stack e-commerce app that turns customers’ dog photos into
+                custom illustrated printed books, automating everything from photo
+                upload through Stripe checkout to third-party physical print
+                fulfillment; paying customers since July 2026.
+            </>,
+            'Designed the multi-model generation pipeline: Claude writes each structured 24-page story, a vision pass extracts the dog’s appearance from photos, and Gemini illustrates every page with consistent characters.',
+            'Built the Postgres job queue behind each order: concurrent workers run several minutes of AI generation per book, retrying failed steps and resuming after crashes, with idempotent webhooks preventing double charges.',
+            'Automated post-purchase and abandoned-cart marketing email flows in Klaviyo through custom event webhooks.',
+        ],
+        tech: ['Claude', 'Gemini', 'Postgres', 'Stripe', 'Klaviyo'],
+    },
+    {
+        company: 'Grizz the Beagle',
+        role: 'Software Engineer',
+        period: 'May 2025 — Present',
+        where: 'New York, NY',
+        bullets: [
+            'Automated 80%+ of routine customer inquiries using a production RAG chatbot (FastAPI, Claude API) integrated with a no-code Google Sheets knowledge base.',
+            'Cut average response times from 12+ hours to under 10 seconds by deploying a stateless, vanilla-JS chat widget directly within the Shopify theme code.',
+            'Built a data pipeline with nightly ETL jobs that pull Shopify, Meta Ads, and chatbot data into one Postgres database, plus a Next.js dashboard showing cross-platform metrics like blended ROAS and ROI.',
         ],
         tech: ['FastAPI', 'Claude', 'Postgres', 'Next.js', 'Shopify'],
     },
@@ -57,13 +84,13 @@ const projectGroups = [
             {
                 id: 'sabergraphs',
                 title: 'SaberGraphs',
-                blurb: 'Type a baseball question in natural language, get back an interactive chart and a short written answer.',
+                blurb: 'Full-stack AI app that answers baseball questions with interactive charts, making advanced analytics accessible to non-technical users.',
                 year: 2026,
                 status: 'Live',
-                tech: ['React', 'FastAPI', 'PostgreSQL', 'OpenAI'],
+                tech: ['React', 'FastAPI', 'PostgreSQL', 'Claude API', 'Docker'],
                 media: sabergraphsImg,
                 liveLink: 'https://sabergraphs.com',
-                github: null,
+                github: 'https://github.com/cmartinez131/sabergraphs',
             },
             {
                 id: 'abs',
@@ -108,7 +135,7 @@ const projectGroups = [
                 title: 'Real-Time Drawing Game',
                 blurb: 'Real-time multiplayer drawing and guessing game, similar to Pictionary. Players take turns sketching prompts while others try to guess, with live chat and round scoring.',
                 year: 2023,
-                status: 'Shipped',
+                status: null,
                 tech: ['React', 'Node', 'Socket.IO', 'MongoDB'],
                 media: null,
                 liveLink: null,
@@ -226,21 +253,21 @@ const Intro = () => {
                     <p className="rec-bio-para">
                         I earned a BS in Computer Science from Hunter College and am
                         pursuing an MS in Computer Science at Georgia Tech, specializing
-                        in machine learning. I build full-stack applications and continue
-                        to expand my AI/ML skill set.
+                        in Artificial Intelligence. I build full-stack applications and
+                        continue to expand my AI/ML skills.
                     </p>
                     <p className="rec-bio-para">
-                        Recently, I designed a reinforcement-learning system for an MLB
-                        challenge strategy that I presented at the{' '}
+                        Right now I'm building{' '}
                         <a
                             className="intro-link"
-                            href="https://sabergraphs.com/"
+                            href="https://www.fetchandfable.co/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            SABR Analytics Conference 2026
+                            Fetch &amp; Fable
                         </a>
-                        . I'm currently building{' '}
+                        , an e-commerce app that turns customers' dog photos into custom
+                        illustrated books, and{' '}
                         <a
                             className="intro-link"
                             href="https://sabergraphs.com/"
@@ -249,14 +276,23 @@ const Intro = () => {
                         >
                             SaberGraphs
                         </a>
-                        , a full-stack AI app that turns natural-language questions into
-                        interactive baseball data visualizations.
+                        , an AI app that turns natural-language questions into
+                        interactive baseball charts.
                     </p>
                     <p className="rec-bio-para">
-                        Previously, I contributed to pip, the Python package manager, as
-                        a software-engineering mentee at Two Sigma. Outside of work, I'm
-                        a baseball fan who builds side projects around the sport. Explore
-                        my{' '}
+                        I'm a lifelong baseball, fan which is where a lot of my
+                        side projects come from. I recently designed
+                        a reinforcement-learning system for MLB challenge strategy
+                        presneted the reearch at the{' '}
+                        <a
+                            className="intro-link"
+                            href="https://sabr.org/analytics"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            SABR Analytics Conference 2026
+                        </a>
+                        . Explore some of my other{' '}
                         <a
                             className="intro-link"
                             href="#projects"
@@ -323,7 +359,9 @@ const Intro = () => {
                                             ) : (
                                                 <div className="rec-card-placeholder">{p.title}</div>
                                             )}
-                                            <div className="rec-status-tag">{p.status}</div>
+                                            {p.status && (
+                                                <div className="rec-status-tag">{p.status}</div>
+                                            )}
                                         </div>
                                         <div className="rec-card-body">
                                             <div className="rec-card-meta">
