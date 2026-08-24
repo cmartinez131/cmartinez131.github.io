@@ -17,7 +17,7 @@ const experiences = [
     {
         company: 'Fetch & Fable',
         role: 'Software Engineer and Founder',
-        period: 'May 2026 — Present',
+        period: 'May 2026 - Present',
         where: 'New York, NY',
         bullets: [
             <>
@@ -44,7 +44,7 @@ const experiences = [
     {
         company: 'Grizz the Beagle',
         role: 'Software Engineer',
-        period: 'May 2025 — Present',
+        period: 'May 2025 - Present',
         where: 'New York, NY',
         bullets: [
             'Automated 80%+ of routine customer inquiries using a production RAG chatbot (FastAPI, Claude API) integrated with a no-code Google Sheets knowledge base.',
@@ -56,7 +56,7 @@ const experiences = [
     {
         company: 'Varsity Tutors',
         role: 'Computer Science Tutor',
-        period: 'Jun 2025 — Present',
+        period: 'Jun 2025 - Present',
         where: 'New York, NY',
         bullets: [
             'Mentor students from middle school through university in Python, OOP, and algorithms through pair programming, live code reviews, and interactive debugging sessions.',
@@ -67,7 +67,7 @@ const experiences = [
     {
         company: 'Two Sigma',
         role: 'Software Engineering Mentee',
-        period: 'Jul 2021 — Aug 2021',
+        period: 'Jul 2021 - Aug 2021',
         where: 'New York, NY',
         bullets: [
             'Contributed to pip, the Python package manager, by submitting pull requests fixing uninstallation bugs.',
@@ -280,10 +280,10 @@ const Intro = () => {
                         interactive baseball charts.
                     </p>
                     <p className="rec-bio-para">
-                        I'm a lifelong baseball, fan which is where a lot of my
+                        I'm a lifelong baseball fan, which is where a lot of my
                         side projects come from. I recently designed
                         a reinforcement-learning system for MLB challenge strategy
-                        presneted the reearch at the{' '}
+                        and presented the research at the{' '}
                         <a
                             className="intro-link"
                             href="https://sabr.org/analytics"
