@@ -10,7 +10,7 @@ import { scrollTo } from '../utils/scroll';
 
 const credentials = [
     { label: 'M.S., CS (AI)', detail: 'Georgia Tech' },
-    { label: 'B.S., CS', detail: 'Hunter College' },
+    { label: 'B.A., CS', detail: 'Hunter College' },
 ];
 
 const experiences = [
@@ -251,7 +251,7 @@ const Intro = () => {
                         <div className="rec-line" />
                     </div>
                     <p className="rec-bio-para">
-                        I earned a BS in Computer Science from Hunter College and am
+                        I earned a BA in Computer Science from Hunter College and am
                         pursuing an MS in Computer Science at Georgia Tech, specializing
                         in Artificial Intelligence. I build full-stack applications and
                         continue to expand my AI/ML skills.
