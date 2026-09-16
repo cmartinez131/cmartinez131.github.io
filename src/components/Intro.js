@@ -30,26 +30,25 @@ const experiences = [
                 >
                     fetchandfable.co
                 </a>
-                , a full-stack e-commerce app that turns customers’ dog photos into
-                custom illustrated printed books, automating everything from photo
-                upload through Stripe checkout to third-party physical print
-                fulfillment; paying customers since July 2026.
+                , a full-stack e-commerce app that turns customer dog photos into
+                custom illustrated printed books, automated end to end from photo
+                upload through Stripe checkout to third-party print fulfillment;
+                live with paying customers since July 2026.
             </>,
-            'Designed the multi-model generation pipeline: Claude writes each structured 24-page story, a vision pass extracts the dog’s appearance from photos, and Gemini illustrates every page with consistent characters.',
-            'Built the Postgres job queue behind each order: concurrent workers run several minutes of AI generation per book, retrying failed steps and resuming after crashes, with idempotent webhooks preventing double charges.',
-            'Automated post-purchase and abandoned-cart marketing email flows in Klaviyo through custom event webhooks.',
+            'Developed the multi-model generation pipeline: Claude writes each 24-page story, a vision pass extracts the dog’s appearance from photos, and Gemini renders all 24 illustrations with character consistency.',
+            'Designed a Postgres-backed job queue with concurrent workers to absorb viral traffic spikes from affiliate launches, running minutes of AI generation per order with retries, crash recovery, and idempotent webhooks.',
+            'Integrated custom Klaviyo event webhooks to automate abandoned-cart and post-purchase email flows, now driving 25% of attributed revenue.',
         ],
         tech: ['Claude', 'Gemini', 'Postgres', 'Stripe', 'Klaviyo'],
     },
     {
         company: 'Grizz the Beagle',
-        role: 'Software Engineer',
+        role: 'Software Engineer (Contract)',
         period: 'May 2025 - Present',
         where: 'New York, NY',
         bullets: [
-            'Automated 80%+ of routine customer inquiries using a production RAG chatbot (FastAPI, Claude API) integrated with a no-code Google Sheets knowledge base.',
-            'Cut average response times from 12+ hours to under 10 seconds by deploying a stateless, vanilla-JS chat widget directly within the Shopify theme code.',
-            'Built a data pipeline with nightly ETL jobs that pull Shopify, Meta Ads, and chatbot data into one Postgres database, plus a Next.js dashboard showing cross-platform metrics like blended ROAS and ROI.',
+            'Automated 80% of customer support inquiries and cut response time from 8+ hours to under 10 seconds by building a production RAG chatbot (FastAPI, Claude API) embedded in the Shopify storefront.',
+            'Designed a unified data warehouse with nightly ETL ingesting Shopify, Meta Ads, and chatbot data into a Next.js dashboard reporting cross-platform metrics such as blended ROAS and ROI, replacing manual reporting.',
         ],
         tech: ['FastAPI', 'Claude', 'Postgres', 'Next.js', 'Shopify'],
     },
